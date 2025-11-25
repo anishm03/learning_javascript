@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var_let_const</title>
+</head>
+<body>
+    <script>
+        var fname="Anand"; //global scope
+         var fname="Anish"; //reassign
+         fname="sushant"; //re=declare
+         document.write(fname);
+         document.write("<br>");
+
+
+         let lname = "Mahaldar"; //functional or block scope
+        // let lname = "Mahaldar"; //reasssign not allowed
+        lname="patil"; //re=declared allowed
+         document.write(lname);
+         document.write("<br>");
+
+
+         const cname="TCS"; //functional or block scope
+        // const cname="Amazon"; //reassign not allowed
+         //cname="Flipcart"; // error not shown but redelacre not allowed
+         document.write(cname);
+         document.write("<br>");
+    </script>
+    <hr>
+    <script>
+        function example(){
+            var x=1;
+            let y=2;
+            const z=3;
+            if(true){
+                var x=10;
+                let y=20;
+                const z=30;
+                document.write("x :"+x +"<br>");
+                 document.write("y :"+y +"<br>");
+                  document.write("z :"+z +"<br><br>"); //10 20 30
+            }
+             document.write("x :"+x +"<br>");
+                 document.write("y :"+y +"<br>");
+                  document.write("z :"+z +"<br><br>"); //10 2 3
+        }
+        example();
+    </script>
+</body>
+</html>
