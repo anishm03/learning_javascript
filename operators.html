@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <!-- Arithmetic Operators -->
+    <script>
+        var a = 10;
+        var b = 13;
+        var c = a + b;
+        var d = a - b;
+        var e = a * b;
+        var f = a / b;
+        var g = a % b;
+        var h = a ** b;
+        c++;
+        c--;
+        c++;
+        c++;
+        c++;
+        c--;
+        document.write(c + "<br>");
+        document.write(d + "<br>");
+        document.write(e + "<br>");
+        document.write(f + "<br>");
+        document.write(g + "<br>");
+        document.write(h + "<br>");
+    </script>
+<hr><br>
+    <!-- Assignment Operator +=,-=,*=,/=-->
+     <script>
+        var x = 20;
+        var y = 5;
+        // x = x + y;
+        x+=y;
+        document.write(x + "<br>");
+        document.write(y + "<br>");
+     </script>
+     <hr><br>
+     
+     <!-- Comparison Operator <,>,=,<=,>= -->
+      <!-- in == is only check number or === it check data type also -->
+      <script>
+        var p = "25";
+        var q = 10;
+        if(p===q){
+            document.write("its True");
+        }else{
+            document.write("Its False");
+        }
+      </script>
+      <hr><br>
+      <!-- Logical Operators && || ! -->
+       <script>
+
+        var age = 18;
+        if(age>=18 && age<=100){
+            document.write("eligible for vote");
+        }else{
+            document.write("not eligible for vote");
+        }
+    
+
+        var day = "sunday"
+        if(day=== "saturday" || day=== "sunday"){
+            document.write("its a weekend")
+        }else{
+            document.write("its weekday")
+        }
+       </script>
+       <hr><br>
+       <!-- Turnary Opertor -->
+        <script>
+            var myage = 15;
+            let elegibility = (myage>=18) ? "elgible for vote" : "not elgible for vote";
+            document.write(elegibility);
+        </script>
+
+       
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_else_if</title>
+</head>
+
+<body>
+    <!-- <script>
+            var uname = "anish";
+            var pin = "1234";
+
+            var inputname = prompt("Enter user Name");
+            var inputpin = prompt("Enter Pin");
+
+            if(inputname===uname && inputpin===pin){
+                document.write("Login Successfully");
+            }else{
+                document.write("Invalid Input");
+            }      
+        </script> -->
+
+    <script>
+        var per = 50;
+        // var per = prompt("Enter Percentage")
+        if (per >= 80 && per <= 100) {
+            document.write("distinction");
+        }
+        else if (per >= 60 && per < 80) {
+            document.write("First Class");
+        }
+        else if (per >= 35 && per < 60) {
+            document.write("Second Class");
+        } else {
+            document.write("Fail");
+        }
+    </script>
+    <script>
+        var month = 1;
+        // var month = prompt("Enter Month");
+
+        if (month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12) {
+            document.write("Number of days: 31");
+        }
+        else if (month === 4 || month === 6 || month === 9 || month === 11) {
+            document.write("Number of days: 30");
+        }
+        else if (month === 2) {
+            document.write("Its February");
+        }
+        else {
+            document.write("Invalid month number");
+        }
+
+    </script>
+</body>
+
+</html>
