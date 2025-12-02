@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //modify or update and delete
+        var a = ["anish",22,"male","developer"]
+        document.write(a + "<br>");
+        
+        a[1]=21;
+          document.write(a + "<br>");
+         delete a[3];
+          document.write(a + "<br>");
+    </script>
+    <script>
+        //sorting and reverse
+        var a = ["anish","prasad","aniket","akash","tejas","ganesh","vaibhav"];
+        document.write(a + "<br>")
+        a.sort();
+        document.write(a + "<br>")
+         a.reverse();
+        document.write(a + "<br>")
+    </script>
+    <script>
+        //pop and push
+        document.write("<h2>Pop and Pull</h2>")
+        var a = ["anish","prasad","aniket","akash","tejas","ganesh","vaibhav"];
+        document.write(a + "<br>");
+        a.pop();
+        a.pop();
+        a.pop();
+         document.write(a + "<br>");
+         a.push("Anish");
+          a.push("vaibhav");
+          document.write(a + "<br>");
+    </script>
+    <script>
+         document.write("<h2>Shift and Unshift</h2>")
+        var a = ["anish","prasad","aniket","akash","tejas","ganesh","vaibhav"];
+        document.write(a + "<br>");
+        a.shift();
+        a.shift();
+        document.write(a + "<br>");
+        a.unshift("mrunal");
+        a.unshift("rashmika");
+         document.write(a + "<br>");
+
+    </script>
+    <script>
+         document.write("<h2>concat and join</h2>")
+        var a = ["anish","prasad","aniket","akash","tejas","ganesh","vaibhav"];
+        var b = ["sushant","satyam","tushar"];
+        var c = a.concat(b);
+        document.write(c + "<br>");
+        var d = c.join("/");
+        document.write(d + "<br>");
+
+    </script>
+    <script>
+         document.write("<h2>concat and join</h2>")
+        var a = ["anish","prasad","aniket","akash","tejas","ganesh","vaibhav"];
+        var b = ["sushant","satyam","tushar"];
+        var x = ["rashmika","mrunal"]
+        var c = a.concat(b , x);
+        document.write(c + "<br>");
+    </script>
+<br>
+
+    <script>
+         document.write("<h1>slice</h1>")
+         var a = ["anish","prasad","aniket","akash","tejas","ganesh","vaibhav"];
+         document.write(a + "<br>");
+
+         //slice(start,end)
+         b = a.slice(1,5);
+         document.write(b + "<br>");
+    </script>
+    <br>
+    <script>
+       
+         document.write("<h1>splice</h1>")
+         var a = ["anish","prasad","aniket","akash","tejas","ganesh","vaibhav"];
+         document.write(a + "<br>");
+          //splice(index,how many delete,"new value add"
+          a.splice(2,3,"sushnat","adarash","Vivek");
+          document.write(a + "<br>");
+    </script>
+
+</body>
+</html>

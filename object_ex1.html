@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object_ex1</title>
+</head>
+<body>
+    <script>
+        var a = {
+            fname : 'anish',
+            lname : 'mahaldar',
+            age : 22,
+            email : 'anishmahaldar@gmail.com',
+            players : ['dhoni','virat','yuraj','jadeja'], //array in object
+            address : {
+                'city': 'kolhapur',
+                'country': 'india'
+            },
+            phn : 2145789658,
+            msg : "Today i am going to russia"
+        }
+        document.write("my name is" + a.fname + "<br>" + "My surname is" + a.lname + "<br>");
+        document.write("my age is" + a.age + "my email id" + a.email);
+         document.write(" my fav player" + a.players[0] + "my address id" + a.address.city);
+
+    </script>
+    <br>
+    <script>
+        var emp = {
+            emid : 1001,
+            emfname : 'anish',
+            emlanme : 'mahaldar',
+            ememail : 'anishm@gmail.com',
+            emaddress : {
+                city : 'pune',
+                country : 'india'
+            },
+            emsalary : 45000,
+            emphn : 4585458458
+        }
+        document.write("employee id :" + emp.emid + "<br>" + "employee name:" + emp.emfname + "<br>" + "employee address :" + emp.emaddress.city + "<br>" + "employee salary :" + emp.emsalary)
+    </script>
+</body>
+</html>
